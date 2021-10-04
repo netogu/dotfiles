@@ -54,7 +54,7 @@ nnoremap <Leader>O O<Esc>^Da
 
 nnoremap <C-w> :bd<CR>
 
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
