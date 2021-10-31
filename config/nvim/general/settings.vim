@@ -2,6 +2,8 @@
 let g:mapleader = ","
 
 syntax enable                           " Enables syntax highlighing
+set nohlsearch                          " Stops highlighing of search
+set clipboard+=unnamedplus
 set foldmethod=indent                   " Enable folding
 set foldlevel=99
 set nu                                  " Show Numbers
@@ -51,4 +53,5 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " You can't stop me
 cmap w!! w !sudo tee %
 
-let g:python3_host_prog = '/Users/eurdaneta/miniconda3/envs/nvim/bin/python3'
+let g:python3_host_prog = expand('/usr/bin/python3')
+let g:node_host_prog = expand('/usr/bin/npm')

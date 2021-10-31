@@ -9,11 +9,10 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " THEMES
 source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/onedark.vim
 
 " AUTOCOMPLETE
 source $HOME/.config/nvim/plug-config/coc.vim
-
-colorscheme onedark
 
 " FZF
 source $HOME/.config/nvim/plug-config/fzf.vim

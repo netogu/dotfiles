@@ -9,8 +9,11 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " OneDark theme
+    Plug 'joshdick/onedark.vim'
+    
     " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
@@ -20,32 +23,38 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'vim-scripts/indentpython.vim'
     " Comment Management 
     Plug 'tpope/vim-commentary'
-    " Theme : One Dark
-    Plug 'joshdick/onedark.vim'
+    
     " Python Context Enhancer
     Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-    " Code Folding
-    " Plug 'tmhedberg/SimpylFold'
-    " Stable version of coc
-    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "
     " Splash Screen
     Plug 'mhinz/vim-startify'
     " Airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    " Autocomplete
+    
+    " Autocomplete & Language Server
     Plug 'neoclide/coc.nvim', {'branch': 'release'} 
-    " Conda Environments
-    Plug 'cjrh/vim-conda'
-    "CCLS Language Server
-    " Plug 'Maxattax97/coc-ccls' 
-    " IPython Integration
-    " Plug 'ivanov/vim-ipython'
+    
+    " Fuzzy Finder
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    
+    " Changes root to opened file path
     Plug 'airblade/vim-rooter'
+    
+    " Adds different colors to brackets
     Plug 'frazrepo/vim-rainbow'
+
+    " Shows CSS Colors
+    Plug 'ap/vim-css-color'
+    
+    " Adds SPICE Syntax Highlighting
     Plug 'ftorres16/spice.vim'
+
+    " Conda Virtual Envs
+    Plug 'cjrh/vim-conda' 
+
 call plug#end()
 
 " Rainbow Parenthesis Config
