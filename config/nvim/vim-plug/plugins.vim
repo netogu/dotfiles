@@ -53,7 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ftorres16/spice.vim'
 
     " Conda Virtual Envs
-    Plug 'cjrh/vim-conda' 
+    " Plug 'cjrh/vim-conda' 
 
 call plug#end()
 
