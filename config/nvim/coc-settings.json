@@ -9,6 +9,7 @@
     "json",
     "python"
   ],
+  "suggest.noselect": true,
   // python config
   "python.linting.enabled": false,
   "python.linting.pylintEnabled": false,
