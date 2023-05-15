@@ -2,6 +2,8 @@ local lsp = require("lsp-zero").preset({})
 
 lsp.preset("recommended")
 
+lsp.nvim_workspace()
+
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
@@ -41,7 +43,7 @@ cmp.setup({
   mapping = {
     ['<Tab>'] = cmp_action.luasnip_supertab(),
     ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
-    ['<Space>'] = cmp.mapping.confirm({select = false})
+    ['<S-Space>'] = cmp.mapping.confirm({select = false})
   }
 })
 
